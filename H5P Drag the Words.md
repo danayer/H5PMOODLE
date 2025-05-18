@@ -44,11 +44,22 @@ H5P (HTML5 Package) — это бесплатный и открытый инст
 
 3. **Текст с перетаскиваемыми словами**: Это основная часть задания. Здесь вы создаете текст и отмечаете слова, которые студенты должны будут перетаскивать.
 
-   **Синтаксис**: Слова, которые нужно перетаскивать, заключаются в звездочки и содержат подсказку, разделенную двоеточием.
+   **Важные инструкции из официальной wiki:**
    
-   **Формат**: `*правильное_слово:подсказка*`
+   - Пропущенные слова добавляются со звездочкой (*) спереди и сзади правильного слова/фразы.
+   - Вы можете добавить текстовую подсказку, используя двоеточие (:) перед подсказкой.
+   - Для каждого пустого места есть только одно правильное слово.
+   - Вы можете добавить отзыв, который будет отображаться после завершения задачи. Используйте '\+' для правильного и '\-' для неправильного отзыва.
    
-   **Пример**: 
+   **Пример с обратной связью**:
+   ```
+   H5P content may be edited using a *browser:What type of program is Chrome?\+Правильно!\-Попробуйте еще раз!*.
+   H5P content is *interactive\+Верно! \-Неверно, попробуйте еще раз!*
+   ```
+
+   **Базовый формат**: `*правильное_слово:подсказка*` или `*правильное_слово\+положительный отзыв\-отрицательный отзыв*`
+   
+   **Простой пример**: 
    ```
    Москва - *столица:главный город* России. Она расположена на *реке:водоём* Москве.
    ```
@@ -97,6 +108,34 @@ H5P (HTML5 Package) — это бесплатный и открытый инст
 
 ```
 *Петр I:первый император* стал правителем России в *1682:год начала правления* году и правил до *1725:год окончания правления* года.
+```
+
+### Пример 4: Авиационный английский по теме Air Logistics
+
+#### Пример 4.1: Базовая терминология авиационной логистики
+
+```
+The *cargo:goods transported by aircraft\+Correct!\-Try again!* was loaded into the aircraft by specialized *handlers:people who load goods\+Well done!\-Not quite!*. The shipment included *perishable:items that can expire quickly\+Excellent!\-Check again!* goods that required *refrigeration:process of keeping items cold\+Correct!\-Try once more!*.
+```
+
+#### Пример 4.2: Процедура обработки груза
+
+```
+Before loading, all cargo must go through *security:safety checking procedures\+Right!\-Incorrect!* screening. Oversized items require *special:not standard\+Correct!\-Not the right answer!* handling equipment. The *manifest:document listing cargo items\+Great!\-Try again!* must be verified by ground *crew:staff working at airport\+Yes!\-Not quite!* before departure.
+```
+
+#### Пример 4.3: Коммуникация воздушного движения
+
+```
+Air Traffic Control: "Cargo flight 3142, you are *cleared:given permission\+Correct!\-Wrong, try again!* for takeoff."
+Pilot: "Roger, *cleared:acknowledged permission\+Right!\-Not correct!* for takeoff, Cargo 3142."
+The flight will follow *airways:designated air routes\+Excellent!\-Not the right term!* to reach its *destination:final location\+Very good!\-Try again!* airport.
+```
+
+#### Пример 4.4: Документация и регламенты
+
+```
+International air freight requires proper *documentation:official papers\+Correct!\-Not quite!* including an air *waybill:shipping document\+Excellent!\-Try again!*. Dangerous goods must be declared according to *IATA:International Air Transport Association\+Perfect!\-Check again!* regulations. The *customs:government authorities\+Right!\-Not the right answer!* clearance is necessary for international shipments.
 ```
 
 ## Советы по созданию эффективных заданий
